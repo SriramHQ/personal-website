@@ -1,0 +1,17 @@
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px; /* Ensures columns don't get too narrow */
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+  }
+}
